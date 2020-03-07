@@ -1,0 +1,31 @@
+$colors : (
+    pureWHite : #fff,
+    shadow : rgb(187, 187, 187),
+    background : #ececec
+);
+
+.col{
+    text-align: center;
+}
+
+.site-card-wrapper {
+    background:map-get($colors, background);
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:  100%;
+}
+
+.site-card-wrapper-confirmed {
+    background:map-get($colors, background);
+    padding: 30px 10% 30px 10%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width:  100%;
+}
+
+.card:hover{
+    box-shadow: map-get($colors , shadow) 1px 1px 20px;
+}
